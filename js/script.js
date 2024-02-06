@@ -7,34 +7,73 @@
 // Se l'utente ha indovinato l'esito (pari o dispari) della somma ha vinto, altrimenti ha perso.
 
 
+// let sceltaUtente;
+// let numero;
+// let randomNumber;
+// sceltaUtente = prompt("Scegli pari o dispari");
+
+// while (!(sceltaUtente === "pari" || sceltaUtente === "dispari")) {
+//     sceltaUtente = prompt("Scelta non valida: Scegli 'pari' o 'dispari'");
+// }
+// numero = Number(prompt("Inserisci un numero. Inserisci un numero da 1 a 5"));
+
+// while (numero < 1 || numero > 5 || isNaN(numero)) {
+//     numero = Number(prompt("Scelta non valida. Inserisci un numero da 1 a 5"));
+// }
+
+// randomNumber = random();
+// let sum = 0;
+
+// sum = numero + randomNumber;
+// let esito = check(sum);
+
+// console.log("Numero Utente " + numero);
+// console.log("Scelta utente: " + sceltaUtente);
+// console.log("Numero casuale: " + randomNumber);
+// console.log("La somma dei numeri è " + sum);
+// console.log(esito);
+
+// if (sceltaUtente === esito) {
+//     console.log("Utente ha vinto");
+// } else {
+//     console.log("Computer ha vinto");
+// }
+
+// function random() {
+//     return Math.floor(Math.random() * 5 + 1);
+// }
+
+// function check(somma) {
+
+//     if (somma % 2 === 0) {
+//         return "pari";
+//     } else {
+//         return "dispari"
+//     }
+// }
 
 
-// Palidroma
-// Chiedere all’utente di inserire una parola.
-// Creare una funzione per capire se la parola inserita è palindroma
-// (ad esempio, questa funzione potrebbe funzionare così: passandole la parola come parametro, farà i suoi calcoli per capire se è palindroma o meno e ci restituirà true o false in base all'esito)
 
-
-// chiedi una parola 
+// 
 
 // function created
 function trovaPalindromo(parola) {
-    // faccio un ciclo che sarà lungo la metà della parola inserita, se la prima lettera è diversa dall'ultima ritorna il valore il false altrimenti cicla fino al termine di tutti i cicli. 
+    // faccio un ciclo che sarà lungo la metà della parola inserita, se la prima lettera è diversa dall'ultima ritorna il valore il false altrimenti cicla fino al termine di tutti i cicli.
     // Ritorna true alla fine.
-    for (let i = 0; i < parola.length / 2; i++) {
+    for (let i = 0; i < Math.floor(parola.length / 2); i++) {
         if (parola[i] !== parola[parola.length - (i + 1)]) {
-            console.log(parola[i]);
-            console.log(parola[parola.length - (i + 1)]);
             return false;
         }
-        console.log("true " + parola[i]);
-        console.log("true " + parola[parola.length - (i + 1)]);
     }
-
     return true;
 }
 
-let word = prompt("inserisci una parola");
+let word;
+word = prompt("Inserisci una parola");
+while (!isNaN(word)) {
+    word = prompt("Inserisci una parola");
+}
+
 console.log(trovaPalindromo(word));
 
 
