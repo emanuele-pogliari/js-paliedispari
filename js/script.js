@@ -13,3 +13,29 @@
 // Chiedere all’utente di inserire una parola.
 // Creare una funzione per capire se la parola inserita è palindroma
 // (ad esempio, questa funzione potrebbe funzionare così: passandole la parola come parametro, farà i suoi calcoli per capire se è palindroma o meno e ci restituirà true o false in base all'esito)
+
+
+// chiedi una parola 
+
+
+function trovaPalindromo(parola) {
+
+    for (let i = 0; i < parola.length / 2; i++) {
+        if (parola[i] !== parola[parola.length - (i + 1)]) {
+            console.log(parola[i]);
+            console.log(parola[parola.length - (i + 1)]);
+            return false;
+        }
+        console.log("true " + parola[i]);
+        console.log("true " + parola[parola.length - (i + 1)]);
+    }
+
+    return true;
+}
+
+let word = "adpuda";
+console.log(trovaPalindromo(word));
+
+
+
+
