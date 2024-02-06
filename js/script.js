@@ -17,9 +17,10 @@
 
 // chiedi una parola 
 
-
+// function created
 function trovaPalindromo(parola) {
-
+    // faccio un ciclo che sarà lungo la metà della parola inserita, se la prima lettera è diversa dall'ultima ritorna il valore il false altrimenti cicla fino al termine di tutti i cicli. 
+    // Ritorna true alla fine.
     for (let i = 0; i < parola.length / 2; i++) {
         if (parola[i] !== parola[parola.length - (i + 1)]) {
             console.log(parola[i]);
@@ -33,7 +34,7 @@ function trovaPalindromo(parola) {
     return true;
 }
 
-let word = "adpuda";
+let word = prompt("inserisci una parola");
 console.log(trovaPalindromo(word));
 
 
