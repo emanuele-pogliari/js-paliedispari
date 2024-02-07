@@ -1,5 +1,9 @@
-canvas {
-    display: block;
+body {
+    background-image: url(../img/matrix-code-numbers-green.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Matrix', sans-serif;
 }
 
 @font-face {
@@ -7,23 +11,11 @@ canvas {
     src: url(../fonts/matrix.ttf);
 }
 
-h1 {
-    font-family: 'Matrix', sans-serif;
+a {
+    text-decoration: none;
 }
 
-.morpheus {
-    width: 60%;
-
-}
-
-.riga {
-    top: -5%;
-}
-
-#title {
-    font-size: 60px;
-    color: white;
-    top: 5%;
-    right: 5%;
-    font-family: 'Matrix';
+.my_title {
+    color: whitesmoke;
+    font-size: 72px;
 }
