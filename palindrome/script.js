@@ -1,6 +1,7 @@
 
 const buttonPalindromeElement = document.querySelector("#btn-start2");
 buttonPalindromeElement.addEventListener("click", findPalindrome);
+const result = document.querySelector("#result");
 
 function findPalindrome() {
     // function created
@@ -19,6 +20,18 @@ function findPalindrome() {
     while (!isNaN(word)) {
         word = prompt("Inserisci una parola");
     }
+    let outcome = trovaPalindromo(word);
 
-    console.log(trovaPalindromo(word));
+    result.classList.add("m-3");
+
+    if (outcome == true) {
+        result.innerHTML = `La parola ${word} e' palindroma`
+        buttonPalindromeElement.innerHTML = "Start again";
+    }
+    else {
+        result.innerHTML = `La parola ${word} non e' palindroma`
+        buttonPalindromeElement.innerHTML = "Start again";
+    }
+
+
 }
