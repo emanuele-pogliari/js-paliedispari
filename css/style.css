@@ -1,0 +1,29 @@
+canvas {
+    display: block;
+}
+
+@font-face {
+    font-family: "Matrix";
+    src: url(../fonts/matrix.ttf);
+}
+
+h1 {
+    font-family: 'Matrix', sans-serif;
+}
+
+.morpheus {
+    width: 60%;
+
+}
+
+.riga {
+    top: -5%;
+}
+
+#title {
+    font-size: 60px;
+    color: white;
+    top: 5%;
+    right: 5%;
+    font-family: 'Matrix';
+}
