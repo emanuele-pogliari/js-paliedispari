@@ -1,0 +1,18 @@
+body {
+    background-image: url(../../img/matrix-code-numbers-green.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Matrix', sans-serif;
+}
+
+@font-face {
+    font-family: "Matrix";
+    src: url(../../fonts/matrix.ttf);
+}
+
+h1 {
+    font-size: 78px;
+    color: whitesmoke;
+    font-family: "Matrix";
+}
